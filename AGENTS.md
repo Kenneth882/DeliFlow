@@ -1,5 +1,9 @@
 # AGENTS.md — DeliFlow
 
+## Shared agent instructions
+
+`AGENTS.md` is the shared instruction source; `CLAUDE.md` is a relative symbolic link to it. Edit `AGENTS.md` and preserve the link. After changing instructions, run `sh scripts/agent-ledger.sh check`. When reviewing instruction history or repairing the link, read `docs/agent-instructions.md`; run `sh scripts/agent-ledger.sh` to view the change ledger.
+
 ## Mission and working process
 
 Build a bilingual English/Spanish bodega and deli ordering application that demonstrates reliable AI integration, deterministic business rules, and measurable results. Optimize for a small, understandable system that can be finished, deployed, and explained.

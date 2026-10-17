@@ -1,0 +1,14 @@
+name: Shared agent instructions
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  check-link:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify shared instruction source
+        run: sh scripts/agent-ledger.sh check
